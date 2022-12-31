@@ -11,7 +11,7 @@ prediction_key = "c8816cd72fba48caa5f6c1af3ed4220d"
 prediction_resource_id = "/subscriptions/10b0f1ee-d5b8-44c5-8d92-05d91ad208c2/resourceGroups/imageclassification/providers/Microsoft.CognitiveServices/accounts/fruit"
 prediction_credentials = ApiKeyCredentials(in_headers={"Prediction-key": prediction_key})
 predictor = CustomVisionPredictionClient(ENDPOINT, prediction_credentials)
-projectid = 'cb04acc0-8779-461e-8b1a-412e1b15afbb'
+projectid = '497fdfd0-2128-494d-8e22-2984d21be39d'
 name = 'Iteration1'
 def pred(img):
 
