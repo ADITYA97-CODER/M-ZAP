@@ -57,7 +57,7 @@ ROOT_URLCONF = 'mosquito.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR , "templates/home")],
+        'DIRS': [os.path.join(BASE_DIR , "home/templates/home")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,6 +128,9 @@ STATICFILES_DIRS = [
 
     BASE_DIR / 'static'
 ]
+STATIC_ROOT = BASE_DIR / 'statics'
+  
+STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
